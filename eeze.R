@@ -1,8 +1,8 @@
 #Working directory
-setwd("~/Documents/Thesis/R")
+setwd("~/Documents/automated-grading-r-assignments")
 
 #Get students' solution 
-student_solutions <- list.files(".", pattern = "*.R")
+student_solutions <- list.files("../student_solns", pattern = "*.R")
 
 
 
@@ -10,8 +10,8 @@ student_solutions <- list.files(".", pattern = "*.R")
 library("compare", lib.loc="~/R/x86_64-pc-linux-gnu-library/3.0")
 
 ## File
-source("~/Documents/Thesis/Rassignment.R")
-source("~/Documents/Thesis/Rsolutions.R")
+source("~/Documents/Thesis/R/assignment.R")
+source("~/Documents/Thesis/R/solutions.R")
 
 result <- c()
 feedback <- c()
